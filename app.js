@@ -9,8 +9,6 @@ const json2csv = require('json2csv')
 const journalPath = path.resolve(input)
 const entries = JSON.parse(fs.readFileSync(journalPath)).entries
 
-// console.log(sentiment(entries[0].text))
-
 let results = []
 
 entries.forEach((entry) => {
@@ -24,7 +22,7 @@ entries.forEach((entry) => {
     results.push(result)
 })
 
-const fields = ['date', 'sentiment', 'weather.temperatureCelsius', 'weather.weatherCode', 'location.localityName']
+const fields = ['date', 'sentiment', 'weather.temperatureCelsius', 'weather.weatherCode', 'location.localityName', 'location.longitude', 'location.latitude']
 
 let csv = json2csv({ data: results, fields: fields })
 
