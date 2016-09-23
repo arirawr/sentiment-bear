@@ -1,5 +1,5 @@
 const entriesDir = '../750words'
-const output = 'results/750words.csv'
+const output = 'results/750words'
 
 const fs = require('fs')
 const path = require('path')
@@ -34,4 +34,5 @@ let entries = fs.readdirSync(path.resolve(entriesDir))
 
 const fields = ['date', 'sentiment']
 let csv = json2csv({ data: entries, fields: fields })
-fs.writeFileSync(output, csv)
+fs.writeFileSync(`${output}.csv`, csv)
+fs.writeFileSync(`${output}.json`, JSON.stringify(entries))

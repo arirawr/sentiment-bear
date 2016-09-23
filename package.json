@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "imessage": "^0.1.5",
     "json2csv": "^3.6.3",
     "lodash": "^4.15.0",
     "moment": "^2.15.0",
