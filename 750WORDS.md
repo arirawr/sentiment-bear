@@ -12,7 +12,9 @@
 
 3. Download your 750 Words entries.
 
-    `python download_750words.py -u "YOUR EMAIL" -p "YOUR PASSWORD" -a -P ~/750words`
+    `mkdir 750words`
+    
+    `python download_750words.py -u "YOUR EMAIL" -p "YOUR PASSWORD" -a -P ./750words`
 
 4. Set up this repo
 
@@ -22,7 +24,7 @@
 
     `npm install`
 
-5. Update the `entriesDir` constant in `750words.js` to point to the directory you saved your entires to in step 3.
+5. Update the `entriesDir` constant in `750words.js` to `./750words`, or whatever directory you saved your entires to in step 3.
 
 6. Run the sentiment analysis.
 
