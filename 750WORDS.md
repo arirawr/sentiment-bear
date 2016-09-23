@@ -26,7 +26,11 @@
 
 5. Update the `entriesDir` constant in `750words.js` to `./750words`, or whatever directory you saved your entires to in step 3.
 
-6. Run the sentiment analysis.
+6. Create results directory.
+ 
+    `mkdir results`
+
+7. Run the sentiment analysis
 
     `node 750words.js`
 
