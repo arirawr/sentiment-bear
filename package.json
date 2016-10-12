@@ -9,11 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "Sentimental": "^1.0.1",
     "imessage": "^0.1.5",
     "json2csv": "^3.6.3",
-    "lodash": "^4.15.0",
     "moment": "^2.15.0",
-    "moment-range": "^2.2.0",
     "sentiment": "^2.0.0"
   }
 }

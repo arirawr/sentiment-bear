@@ -1,4 +1,4 @@
-# iMessage
+# iMessage Sentiment
 
 1. Set up this repo
 
@@ -12,4 +12,4 @@
 
     `node sentiment.js`
 
-3. Your results will be in `results/imessage.json` and `results/imessage.csv`
+3. Your results will be in `results/imessage.csv`

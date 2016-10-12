@@ -1,4 +1,6 @@
-# Get Facebook Results
+# Facebook Sentiment
+
+## Part 1: Get Facebook Results
 
 1. Go to https://www.facebook.com/settings and click "Download a copy of your Facebook data."
 
@@ -49,3 +51,21 @@
     ```
 
 5. This will download a file called `facebook.json`.
+
+## Part 2: Analyze
+
+1. Set up this repo
+
+    `git clone git@github.com:cjroth/dayonesentiment.git`
+
+    `cd dayonesentiment`
+
+    `npm install`
+
+2. Put the `facebook.json` file from Part 1 in the `inputs` folder.
+
+3. Run the script to generate a sentiment analysis of your Facebook messages:
+
+    `node facebook.js`
+
+4. Your results will be in `results/facebook.csv`
