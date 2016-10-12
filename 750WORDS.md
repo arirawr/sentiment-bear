@@ -18,7 +18,7 @@
 
 4. Set up this repo
 
-    `git clone git@github.com:cjroth/dayonesentiment.git`
+    `git clone git@github.com:cjroth/sentiment-bear.git`
 
     `cd dayonesentiment`
 
