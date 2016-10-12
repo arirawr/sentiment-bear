@@ -1,3 +1,5 @@
+"use strict";
+
 const fs = require('fs')
 const json2csv = require('json2csv')
 const moment = require('moment')

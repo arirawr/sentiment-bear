@@ -1,3 +1,5 @@
+"use strict";
+
 if (!process.env.NAME) {
     console.error('Please specify your name as it appears on Facebook in the environment:\n')
     console.error('NAME="Your Name" node facebook.js')
