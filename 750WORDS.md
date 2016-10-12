@@ -13,7 +13,7 @@
 3. Download your 750 Words entries.
 
     `mkdir 750words`
-    
+
     `python download_750words.py -u "YOUR EMAIL" -p "YOUR PASSWORD" -a -P ./750words`
 
 4. Set up this repo
@@ -24,14 +24,10 @@
 
     `npm install`
 
-5. Update the `entriesDir` constant in `750words.js` to `./750words`, or whatever directory you saved your entires to in step 3.
+5. Copy your 750 Words entries into `inputs/750words`.
 
-6. Create results directory.
- 
-    `mkdir results`
-
-7. Run the sentiment analysis
+6. Run the sentiment analysis
 
     `node 750words.js`
 
-7. Your output will be in `results/750words.csv` and `results/750words.json`.
+7. Your output will be in `results/750words.csv`.

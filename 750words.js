@@ -1,16 +1,13 @@
-const entriesDir = '../750words'
-const output = 'results/750words'
-
 const fs = require('fs')
 const path = require('path')
-
 const sentiment = require('sentiment')
 const json2csv = require('json2csv')
+const getSentimentScores = require('./lib/get-sentiment-scores')
 
-let entries = fs.readdirSync(path.resolve(entriesDir))
+let entries = fs.readdirSync('inputs/750words')
     .filter(item => /.txt$/.test(item))
     .map((filePath) => {
-        return fs.readFileSync(path.resolve(entriesDir, filePath)).toString()
+        return fs.readFileSync(path.resolve('inputs/750words', filePath)).toString()
     })
     .reduce((prev, curr) => {
         return prev + curr
@@ -23,16 +20,12 @@ let entries = fs.readdirSync(path.resolve(entriesDir))
     })
     .filter(entry => entry.length === 4)
     .map((entry) => {
-        return {
-            date: entry[0].split(':')[1].trim(),
-            words: parseInt(entry[1].split(':')[1].trim()),
-            minutes: parseInt(entry[2].split(':')[1].trim()),
-            text: entry[3],
-            sentiment: sentiment(entry[3]).score
-        }
+        let scores = getSentimentScores(entry[3])
+        scores.words = parseInt(entry[1].split(':')[1].trim())
+        scores.minutes = parseInt(entry[2].split(':')[1].trim())
+        scores.date = date: entry[0].split(':')[1].trim()
+        return scores
     })
 
-const fields = ['date', 'sentiment']
-let csv = json2csv({ data: entries, fields: fields })
-fs.writeFileSync(`${output}.csv`, csv)
-fs.writeFileSync(`${output}.json`, JSON.stringify(entries))
+let csv = json2csv({ data: entries, flatten: true })
+fs.writeFileSync('results/750words.csv', csv)

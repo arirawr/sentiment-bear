@@ -64,8 +64,8 @@
 
 2. Put the `facebook.json` file from Part 1 in the `inputs` folder.
 
-3. Run the script to generate a sentiment analysis of your Facebook messages:
+3. Run the script to generate a sentiment analysis of your Facebook messages, making sure to replace my name with your name the way that it appears on Facebook:
 
-    `node facebook.js`
+    `NAME="Chris Roth" node facebook.js`
 
 4. Your results will be in `results/facebook.csv`
