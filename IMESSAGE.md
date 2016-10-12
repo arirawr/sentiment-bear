@@ -4,7 +4,7 @@
 
     `git clone git@github.com:cjroth/sentiment-bear.git`
 
-    `cd dayonesentiment`
+    `cd sentiment-bear`
 
     `npm install`
 
