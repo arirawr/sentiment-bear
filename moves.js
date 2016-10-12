@@ -1,3 +1,5 @@
+"use strict";
+
 const output = 'results/moves'
 const util = require('util')
 const fs = require('fs')

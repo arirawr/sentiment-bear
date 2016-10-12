@@ -1,3 +1,5 @@
+"use strict";
+
 const fs = require('fs')
 const iMessage = require('imessage')
 const moment = require('moment')
