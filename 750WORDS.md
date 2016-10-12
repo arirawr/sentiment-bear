@@ -18,11 +18,7 @@
 
 4. Set up this repo
 
-    `git clone git@github.com:cjroth/sentiment-bear.git`
-
-    `cd dayonesentiment`
-
-    `npm install`
+    `git clone git@github.com:cjroth/sentiment-bear.git && cd sentiment-bear && npm install`
 
 5. Copy your 750 Words entries into `inputs/750words`.
 

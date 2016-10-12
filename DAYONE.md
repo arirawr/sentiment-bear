@@ -8,11 +8,7 @@
 
 1. Set up this repo
 
-    `git clone git@github.com:cjroth/sentiment-bear.git`
-
-    `cd dayonesentiment`
-
-    `npm install`
+    `git clone git@github.com:cjroth/sentiment-bear.git && cd sentiment-bear && npm install`
 
 2. Unzip the entries from Part 1 and put the JSON file from the Journal that you want to analyze in the `inputs` folder, then rename it to `dayone.json`.
 

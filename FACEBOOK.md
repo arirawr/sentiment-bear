@@ -56,11 +56,7 @@
 
 1. Set up this repo
 
-    `git clone git@github.com:cjroth/sentiment-bear.git`
-
-    `cd dayonesentiment`
-
-    `npm install`
+    `git clone git@github.com:cjroth/sentiment-bear.git && cd sentiment-bear && npm install`
 
 2. Put the `facebook.json` file from Part 1 in the `inputs` folder.
 

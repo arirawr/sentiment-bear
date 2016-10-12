@@ -2,11 +2,8 @@
 
 1. Set up this repo
 
-    `git clone git@github.com:cjroth/sentiment-bear.git`
+    `git clone git@github.com:cjroth/sentiment-bear.git && cd sentiment-bear && npm install`
 
-    `cd dayonesentiment`
-
-    `npm install`
 
 2. Run the script to generate a sentiment analysis of your iMessages:
 
